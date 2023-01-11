@@ -27,7 +27,7 @@ export function Food({
   const [isAvailable, setIsAvailable] = useState(food.available);
 
   async function toggleAvailable() {
-    await api.put(`/foods/${food.id}`, {
+    await api.put(`/foodsMirage/${food.id}`, {
       ...food,
       available: !isAvailable,
     });

@@ -23,17 +23,18 @@ export function Dashboard() {
   const [editModalOpen, setEditModalOpen] = useState(false);
 
   useEffect(() => {
-    api.get("/foods").then((response) => setFoods(response.data));
+    api.get("foodsMirage").then((response) => setFoods(response.data));
   }, []);
 
   async function handleAddFood(food: FoodProps) {
     try {
-      const response = await api.post("/foods", {
+      const response = await api.post("/foodsMirage", {
         ...food,
         available: true,
+        id: Math.floor(Math.random() * 100)
       });
+      setFoods([...foods, response.data.foods]);
 
-      setFoods([...foods, response.data]);
     } catch (err) {
       console.log(err);
     }
@@ -46,7 +47,7 @@ export function Dashboard() {
 
   async function handleUpdateFood(food: FoodProps) {
     try {
-      const foodUpdated = await api.put(`/foods/${editingFood.id}`, {
+      const foodUpdated = await api.put(`/foodsMirage/${editingFood.id}`, {
         ...editingFood,
         ...food,
       });
@@ -62,7 +63,7 @@ export function Dashboard() {
   }
 
   async function handleDeleteFood(id: number) {
-    await api.delete(`/foods/${id}`);
+    await api.delete(`/foodsMirage/${id}`);
 
     const foodsFiltered = foods.filter((food) => food.id !== id);
 
