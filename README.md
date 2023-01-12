@@ -10,7 +10,7 @@ Projeto Web desenvolvido durante o Ignite by Rocketseat • Trilha ReactJS - TEM
 
 ### Adicionais:
 <!-- - [x] Layout responsivo (mobile e desktop). -->
-- [x] Implantei o Miragejs no lugar do JsonServer.
+- [x] Implementar o Miragejs no lugar do JsonServer.
 
 
 ## Tecnologias utilizadas: 🚀
