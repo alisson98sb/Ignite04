@@ -9,7 +9,6 @@ Projeto Web desenvolvido durante o Ignite by Rocketseat • Trilha ReactJS - TEM
 - [x] Modal para edição de pratos;
 
 ### Adicionais:
-<!-- - [x] Layout responsivo (mobile e desktop). -->
 - [x] Implementar o Miragejs no lugar do JsonServer.
 
 
@@ -19,15 +18,9 @@ Projeto Web desenvolvido durante o Ignite by Rocketseat • Trilha ReactJS - TEM
 - React-dom 
 - React-modal
 - Typescript
+- Styled Components
 - Axios
 - Miragejs: 
-
-<!-- ### Desktop (screenshot):
-<img src="./src/assets/Desktop.png" />
-
-
-### Mobile (screenshot):
-<img src="./src/assets/Mobile.jpeg" /> -->
 
 
 ### Dê uma olhada como o projeto ficou!
