@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background: #c72828;
   padding: 30px 0;
-
+  
   header {
     width: 1280px;
     margin: 0 auto;
@@ -37,6 +37,19 @@ export const Container = styled.div`
             margin: 0 auto;
           }
         }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    display:flex ;
+
+    header {
+      display: flex ;
+      flex-direction: column;
+
+      img, nav {
+        margin-top:32px;
       }
     }
   }
