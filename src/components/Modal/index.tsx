@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import ReactModal from 'react-modal';
+import './styles.css';
 
 interface ModalProps {
   isOpen: boolean;
@@ -17,6 +18,7 @@ export function Modal({isOpen,setIsOpen, children}:ModalProps) {
 
     return (
       <ReactModal
+        className="responsiveClass"
         shouldCloseOnOverlayClick={!false}
         onRequestClose={setIsOpen}
         isOpen={modalStatus}

@@ -1,0 +1,7 @@
+@media (max-width: 480px ) { 
+  .responsiveClass {
+    width: 87% !important;
+    transform: none !important;
+    margin: 10px !important;
+  }
+}
